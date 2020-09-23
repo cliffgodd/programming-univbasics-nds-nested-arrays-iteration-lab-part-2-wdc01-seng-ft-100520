@@ -1,11 +1,11 @@
 def find_min_in_nested_arrays(src)
   miniarray = []
   row = 0
-  while row < src.length do
+  while row < src.count do
     element = 0
     min = 0
-    while element < src[row].length do
-      if min < src[row][element]
+    while element < src[row].count do
+      if min < src[row][element][0]
         min = src [row][element]
     end
     element += 1
