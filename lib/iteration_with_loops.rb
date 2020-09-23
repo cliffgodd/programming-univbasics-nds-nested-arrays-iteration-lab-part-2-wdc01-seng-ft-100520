@@ -12,6 +12,7 @@ def find_min_in_nested_arrays(src)
   end
   mini_array << src[row][element]
   count += 1
+  mini_array
 end
 
   # src will be an array of arrays of integers
