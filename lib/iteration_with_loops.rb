@@ -1,17 +1,17 @@
 def find_min_in_nested_arrays(src)
-  miniarray = []
-  row = 0
-  while row < src.count do
-    element = 0
-    min = 0
-    while element < src[row].count do
+  count = 0
+  mini_array = []
+  while count < src.length do
+    inner_count = 0
+    while inner_count < src[row].length do
+      min = -1
       if min < src[row][element]
-        min = src [row][element]
+        min = src[row][element]
     end
-    element += 1
+    inner_count += 1
   end
-  min << miniarray
-  row += 1
+  mini_array << src[row][element]
+  count += 1
 end
 
   # src will be an array of arrays of integers
